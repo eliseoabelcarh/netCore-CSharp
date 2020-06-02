@@ -1,0 +1,84 @@
+﻿@model PanelNewTienda.Models.Tienda
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="card-deck">
+
+    <form asp-action="EditarNombreTienda" asp-controller="Vendedores" method="post">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="IdTienda" />
+
+
+        <div class="card border-secondary mb-3">
+            <div class="card-header">Tienda</div>
+            <div class="card-body">
+                <h5 class="card-title">Nombre :</h5>
+                <div class="form-group">
+                    <label asp-for="NombreTienda" class="control-label"></label>
+                    <input asp-for="NombreTienda" class="form-control" />
+                    <span asp-validation-for="NombreTienda" class="text-danger"></span>
+                </div>
+                <div class="form-group w-100">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultChecked2" asp-for="Publicada">
+                        <label asp-for="Publicada" class="custom-control-label" for="defaultChecked2">Publicar Tienda</label>
+                    </div>
+                </div>
+                <input type="submit" value="Guardar Cambios" class="btn btn-primary" />
+
+            </div>
+        </div>
+    </form>
+
+
+
+    <div class="card border-secondary mb-3">
+        <div class="card-header">
+            Tus Redes Sociales
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fa fa-facebook"></i> : @Html.DisplayFor(m => m.RedSocial.Facebook)</li>
+            <li class="list-group-item"><i class="fa fa-instagram"></i> : @Html.DisplayFor(m => m.RedSocial.Instagram)</li>
+            <li class="list-group-item"><i class="fa fa-whatsapp"></i> : @Html.DisplayFor(m => m.RedSocial.Whatsapp)</li>
+            <li class="list-group-item"><i class="fa fa-twitter"></i> : @Html.DisplayFor(m => m.RedSocial.Twitter)</li>
+            <li class="list-group-item"><i class="fa fa-envelope"></i> : @Html.DisplayFor(m => m.RedSocial.Email)</li>
+
+        </ul>
+        <div class="card-footer">
+            <a class="btn btn-outline-dark" asp-controller="Vendedores" asp-action="EditarRedesSociales" asp-route-id="@Model.RedSocial.IdRedSocial">Modificar</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="card border-secondary mb-3">
+        <div class="card-header">
+            Tienda
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Catálogo de Productos</h5>
+            <p class="card-text">Crea, edita o Publica tus productos.</p>
+            <a asp-area="" asp-controller="Productos" asp-action="CrearProducto" class="btn btn-outline-dark">Crear Producto</a>
+            <a asp-area="" asp-controller="Vendedores" asp-action="Productos" class="btn btn-outline-dark">Ver Productos</a>
+        </div>
+        <div class="card-footer text-muted">
+            <div class="badge badge-info">
+                @ViewBag.CantProdPublicados productos publicados
+            </div>
+
+            <div class="badge badge-info">
+                @ViewBag.CantProdPublicadosTotal productos en total
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</div>

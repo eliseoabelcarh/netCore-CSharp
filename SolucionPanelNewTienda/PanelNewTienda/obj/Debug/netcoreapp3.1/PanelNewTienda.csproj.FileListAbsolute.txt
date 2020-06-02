@@ -1,0 +1,338 @@
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\appsettings.json
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.StaticWebAssets.xml
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.exe
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.csprojAssemblyReference.cache
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.RazorAssemblyInfo.cache
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.RazorAssemblyInfo.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.AssemblyInfoInputs.cache
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.AssemblyInfo.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.TagHelpers.input.cache
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.TagHelpers.output.cache
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.RazorCoreGenerate.cache
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout - Copia.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.RazorTargetAssemblyInfo.cache
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.RazorTargetAssemblyInfo.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.csproj.CopyComplete
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\staticwebassets\PanelNewTienda.StaticWebAssets.Manifest.cache
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\staticwebassets\PanelNewTienda.StaticWebAssets.xml
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.deps.json
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.runtimeconfig.json
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.runtimeconfig.dev.json
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.pdb
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.Views.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.Views.pdb
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.csproj.CoreCompileInputs.cache
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.MvcApplicationPartsAssemblyInfo.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.MvcApplicationPartsAssemblyInfo.cache
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.Views.pdb
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.dll
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.pdb
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.genruntimeconfig.cache
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Vendedores\Index.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Vendedores\Productos.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Productos\EditarProducto.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Productos\CrearProducto.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_cargarImagen.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Productos\EliminarProducto.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Vendedores\EditarNombreTienda.cshtml.g.cs
+D:\ORT\netCore-C# MVC\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Vendedores\EditarRedesSociales.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.csprojAssemblyReference.cache
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.csproj.CoreCompileInputs.cache
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.MvcApplicationPartsAssemblyInfo.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.MvcApplicationPartsAssemblyInfo.cache
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.RazorAssemblyInfo.cache
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.RazorAssemblyInfo.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.AssemblyInfoInputs.cache
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.AssemblyInfo.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.pdb
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\appsettings.json
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.StaticWebAssets.xml
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.exe
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.deps.json
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.runtimeconfig.json
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.runtimeconfig.dev.json
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.pdb
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.Views.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\PanelNewTienda.Views.pdb
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.TagHelpers.input.cache
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.TagHelpers.output.cache
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.RazorCoreGenerate.cache
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Productos\CrearProducto.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Productos\EditarProducto.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Productos\EliminarProducto.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_cargarImagen.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout - Copia.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Vendedores\EditarNombreTienda.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Vendedores\EditarRedesSociales.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Vendedores\Index.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Vendedores\Productos.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.RazorTargetAssemblyInfo.cache
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.RazorTargetAssemblyInfo.cs
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.Views.pdb
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.csproj.CopyComplete
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\staticwebassets\PanelNewTienda.StaticWebAssets.Manifest.cache
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\staticwebassets\PanelNewTienda.StaticWebAssets.xml
+D:\ORT\C#\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.genruntimeconfig.cache

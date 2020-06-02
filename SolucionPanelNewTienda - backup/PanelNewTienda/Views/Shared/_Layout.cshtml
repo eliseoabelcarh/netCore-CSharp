@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>@ViewData["Title"] - NewTiendaDashboard</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site2.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <app>
+        <div class="sidebar">
+            <div class="top-row pl-4 navbar navbar-dark">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Panel de Control</a>
+
+
+
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav flex-column">
+                    <li class="nav-item px-3">
+                        <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link active">
+                            <span class="oi oi-home" aria-hidden="true"></span> Home
+                        </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a asp-area="" asp-controller="Vendedores" asp-action="Index" class="nav-link" onclick="">
+                            <span class="oi oi-code" aria-hidden="true"></span> Mi Tienda
+                        </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a asp-area="" asp-controller="Vendedores" asp-action="Productos" class="nav-link">
+                            <span class="oi oi-code" aria-hidden="true"></span> Catálogo de Productos
+                        </a>
+                    </li>
+
+                    <li class="nav-item px-3">
+                        <a asp-area="" asp-controller="Productos" asp-action="CrearProducto" class="nav-link">
+                            <span class="oi oi-code" aria-hidden="true"></span> Crear Producto
+                        </a>
+                    </li>
+
+                    
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="main">
+
+
+
+
+
+
+
+            <partial name="_LoginPartial" />
+
+
+
+
+
+
+            <div class="content px-4">
+
+
+
+
+                @RenderBody()
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </app>
+
+
+
+
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -8604,11 +8604,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ORT\\C#\\SolucionPanelNewTienda\\PanelNewTienda\\PanelNewTienda.csproj",
+      "projectUniqueName": "D:\\ORT\\netCore-CSharp\\SolucionPanelNewTienda\\PanelNewTienda\\PanelNewTienda.csproj",
       "projectName": "PanelNewTienda",
-      "projectPath": "D:\\ORT\\C#\\SolucionPanelNewTienda\\PanelNewTienda\\PanelNewTienda.csproj",
+      "projectPath": "D:\\ORT\\netCore-CSharp\\SolucionPanelNewTienda\\PanelNewTienda\\PanelNewTienda.csproj",
       "packagesPath": "C:\\Users\\Abel\\.nuget\\packages\\",
-      "outputPath": "D:\\ORT\\C#\\SolucionPanelNewTienda\\PanelNewTienda\\obj\\",
+      "outputPath": "D:\\ORT\\netCore-CSharp\\SolucionPanelNewTienda\\PanelNewTienda\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Abel\\AppData\\Roaming\\NuGet\\NuGet.Config",

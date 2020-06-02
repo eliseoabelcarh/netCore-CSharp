@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8UKxwDWORuq8v3LoV1nACyIV8yOPtVV8+FhGYAwD+5e3is3hXmiQG3tf07g/DTUXe8g6JRFhun2Ht9ja3P6CkA==",
+  "dgSpecHash": "Cw/+juHfr/C58AK7AIqay1dLp568J15+O0N4gqmxE8iDlIHO+meTOM4En42LekZAx16DdR9Z0Tz44VH1cc5Dgg==",
   "success": true,
-  "projectFilePath": "D:\\ORT\\C#\\SolucionPanelNewTienda\\PanelNewTienda\\PanelNewTienda.csproj",
+  "projectFilePath": "D:\\ORT\\netCore-CSharp\\SolucionPanelNewTienda\\PanelNewTienda\\PanelNewTienda.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abel\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.3\\microsoft.aspnetcore.cryptography.internal.3.1.3.nupkg.sha512",
     "C:\\Users\\Abel\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.3\\microsoft.aspnetcore.cryptography.keyderivation.3.1.3.nupkg.sha512",

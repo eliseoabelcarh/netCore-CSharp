@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using PanelNewTienda.Data;
 using PanelNewTienda.Data.Migrations;
 using PanelNewTienda.Models;
+using PanelNewTienda.Services;
 
 namespace PanelNewTienda.Controllers
 {
@@ -22,21 +23,22 @@ namespace PanelNewTienda.Controllers
 
 
 
-        private readonly IHttpContextAccessor _httpContextAccessor;
-       
+      
+        private readonly NewTiendaService _app;
         private readonly ApplicationDbContext _context;
 
-        public ProductosController(ApplicationDbContext context, IHttpContextAccessor httpContextAccessor)
+        public ProductosController(ApplicationDbContext context, NewTiendaService app)
         {
             _context = context;
-            _httpContextAccessor = httpContextAccessor;
+  
+            _app =app;
             
         }
 
         [HttpGet]
         public async Task<IActionResult> CrearProductoAsync()
         {
-            var tiendaActual = await ObtenerTiendaVendedorActual();
+            var tiendaActual = await _app.ObtenerTiendaVendedorActual();
             if(tiendaActual != null)
             {
                 var producto = new Producto() { IdTienda = tiendaActual.IdTienda };
@@ -62,6 +64,7 @@ namespace PanelNewTienda.Controllers
 
                     MemoryStream ms = new MemoryStream();
                     file.CopyTo(ms);
+                    
                     producto.Imagen1 = ms.ToArray();
 
                     ms.Close();
@@ -69,11 +72,14 @@ namespace PanelNewTienda.Controllers
 
                 }
 
+                var agregadoExitosamente = await _app.AgregarProductoNuevoABD(producto);
 
+                if (agregadoExitosamente)
+                {
+                    return RedirectToAction("Productos", "Vendedores");
+                }
 
-                _context.Add(producto);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Productos", "Vendedores");
+               
             }
             return View(producto);
         }
@@ -87,15 +93,13 @@ namespace PanelNewTienda.Controllers
                 return NotFound();
             }
 
-            if (await puedeEditarProductoAsync(id) == false) 
+            if (await _app.PuedeEditarProductoAsync(id) == false) 
             {
                 return NotFound();
             }
 
-            var producto = await _context.Productos.FindAsync(id);
-            //var imagenesDeProducto = _context.Imagenes.Where(i => i.IdProducto == producto.IdProducto);
-            //producto.Imagenes = imagenesDeProducto.ToList();
-            //ViewBag.Images = imagenesDeProducto;
+            var producto = await _app.ObtenerProductoPorId(id);
+            
 
 
             if (producto == null)
@@ -119,8 +123,6 @@ namespace PanelNewTienda.Controllers
                 return NotFound();
             }
 
-           
-
             if (ModelState.IsValid)
             {
                 try
@@ -135,7 +137,7 @@ namespace PanelNewTienda.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProductoExists(producto.IdProducto))
+                    if (!(_app.ProductoExists(producto.IdProducto)))
                     {
                         return NotFound();
                     }
@@ -166,7 +168,7 @@ namespace PanelNewTienda.Controllers
 
                     MemoryStream ms = new MemoryStream();
                     file.CopyTo(ms);
-                    var producto = _context.Productos.Find(prodAux.IdProducto);
+                    var producto =await _app.ObtenerProductoPorId(prodAux.IdProducto);
                     producto.Imagen1 = ms.ToArray();
                     await _context.SaveChangesAsync();
                     ms.Close();
@@ -189,13 +191,13 @@ namespace PanelNewTienda.Controllers
             {
                 return NotFound();
             }
-            if (await puedeEditarProductoAsync(id) == false)
+            if (await _app.PuedeEditarProductoAsync(id) == false)
             {
                 return NotFound();
             }
 
-            var producto = await _context.Productos
-                .FirstOrDefaultAsync(m => m.IdProducto == id);
+            var producto = await _app.ObtenerProductoPrimeroOrDefault(id);
+
             if (producto == null)
             {
                 return NotFound();
@@ -209,60 +211,22 @@ namespace PanelNewTienda.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            //HABRI QUE BORRAR IMAGENES TMB
-            var producto = await _context.Productos.FindAsync(id);
-            _context.Productos.Remove(producto);
-            await _context.SaveChangesAsync();
-            return RedirectToAction("Productos","Vendedores");
-        }
+            var sePudoBorrar = await _app.BorrarProductoEnDBAsync(id);
 
-
-
-
-        private async Task<bool> puedeEditarProductoAsync(int? idProductoAEditar)
-        {
-            var resultado = false;
-            if(idProductoAEditar != null)
+            if (sePudoBorrar)
             {
-                var tiendaDeUsuario = await ObtenerTiendaVendedorActual();
-                if (tiendaDeUsuario == null) 
-                {
-                    resultado = false;
-                }
-                var productoAEditar = await _context.Productos.FindAsync(idProductoAEditar);
-
-                if (productoAEditar.IdTienda == tiendaDeUsuario.IdTienda)
-                {
-                    resultado = true;
-                }
+                return RedirectToAction("Productos", "Vendedores");
             }
-            return resultado;
-        }
-      
-
-
-        private bool ProductoExists(int id)
-        {
-            return _context.Productos.Any(e => e.IdProducto == id);
-        }
-        private async Task<Tienda> ObtenerTiendaVendedorActual()
-        {
-
-            try
+            else 
             {
-                var userId = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
-                var vendedor = await _context.Vendedores.Include("Tienda").FirstOrDefaultAsync(v => v.Id == userId);
-                var tienda = await _context.Tiendas.Include("RedSocial").Include("Productos").FirstOrDefaultAsync(t => t.IdTienda == vendedor.IdTienda);
-                return tienda;
+                return RedirectToAction("EliminarProducto", "Productos", new { @id = id });
             }
-            catch(DbUpdateConcurrencyException)
-            {
-                return null;
-            }
-
-            
         }
 
+
+
+
+       
 
 
 

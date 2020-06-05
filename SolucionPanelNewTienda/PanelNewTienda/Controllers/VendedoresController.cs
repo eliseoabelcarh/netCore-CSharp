@@ -35,15 +35,9 @@ namespace PanelNewTienda.Controllers
         public async Task<IActionResult> Index()
         {
 
-            //PROBANDO SERVICIO PROPIO CREADO
-            var tiendaDesdeServicio = await _app.obtenerTiendaVendedorActual();
-            ViewBag.NroTienda = tiendaDesdeServicio.IdTienda;
-            //fin de prueba
-
-
-            var tienda = await obtenerTiendaVendedorActual();
-            ViewBag.CantProdPublicados = await ObtenerCantidadProductosPublicadosAsync();
-            var prods = await ObtenerProductosDeTiendaActualAsync();
+            var tienda = await _app.ObtenerTiendaVendedorActual();
+            ViewBag.CantProdPublicados = await _app.ObtenerCantidadProductosPublicadosAsync();
+            var prods = await _app.ObtenerProductosDeTiendaActualAsync();
             ViewBag.CantProdPublicadosTotal = prods.Count();
 
             return View(tienda);
@@ -55,13 +49,13 @@ namespace PanelNewTienda.Controllers
             {
                 return NotFound();
             }
-            var tienda = await obtenerTiendaVendedorActual();
+            var tienda = await _app.ObtenerTiendaVendedorActual();
             if (tienda == null)
             {
                 return NotFound();
             }
-            ViewBag.CantProdPublicados = await ObtenerCantidadProductosPublicadosAsync();
-            var prods = await ObtenerProductosDeTiendaActualAsync();
+            ViewBag.CantProdPublicados = await _app.ObtenerCantidadProductosPublicadosAsync();
+            var prods = await _app.ObtenerProductosDeTiendaActualAsync();
             ViewBag.CantProdPublicadosTotal = prods.Count();
             return View(tienda);
         }
@@ -84,7 +78,7 @@ namespace PanelNewTienda.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TiendaExiste(tienda.IdTienda))
+                    if (!(_app.TiendaExiste(tienda.IdTienda)))
                     {
                         return NotFound();
                     }
@@ -104,11 +98,11 @@ namespace PanelNewTienda.Controllers
             {
                 return NotFound();
             }
-            if (await puedeEditarRedSocialAsync(id) == false)
+            if (await _app.PuedeEditarRedSocialAsync(id) == false)
             {
                 return NotFound();
             }
-            var redSocial = await _context.RedesSociales.FindAsync(id);
+            var redSocial = await _app.ObtenerRedSocialPorId(id);
             if (redSocial == null)
             {
                 return NotFound();
@@ -136,7 +130,7 @@ namespace PanelNewTienda.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TiendaExiste(redSocial.IdRedSocial))
+                    if (!(_app.TiendaExiste(redSocial.IdRedSocial)))
                     {
                         return NotFound();
                     }
@@ -151,77 +145,15 @@ namespace PanelNewTienda.Controllers
 
         public async Task<IActionResult> Productos()
         {
-            var tienda = await obtenerTiendaVendedorActual();
-            var productos = _context.Productos.Where(p => p.IdTienda == tienda.IdTienda);
+            
+            var productos = await _app.ObtenerProductosDeTiendaActualAsync();
             
            
            
             return View(productos);
         }
 
-        private async Task<Tienda> obtenerTiendaVendedorActual()
-        {
-            try
-            {
-                var userId = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
-                var vendedor = await _context.Vendedores.Include("Tienda").FirstOrDefaultAsync(v => v.Id == userId);
-                var tienda = await _context.Tiendas.Include("RedSocial").Include("Productos").FirstOrDefaultAsync(t => t.IdTienda == vendedor.IdTienda);
-                return tienda;
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                return null;
-            }
-
-        }
-
-
-        private bool TiendaExiste(int id)
-        {
-            return _context.Tiendas.Any(e => e.IdTienda == id);
-        }
-
-        private async Task<int> ObtenerCantidadProductosPublicadosAsync() 
-        {
-            int cant = 0;
-            var productos = await ObtenerProductosDeTiendaActualAsync();
-            if (productos != null) 
-            {
-                foreach (var prod in productos) 
-                {
-                    if(prod.Publicado == true)
-                    {
-                        cant += 1;
-                    }
-                }
-            }
-
-            return cant;
-        }
-        private async Task<List<Producto>> ObtenerProductosDeTiendaActualAsync()
-        {
-
-            var tienda = await obtenerTiendaVendedorActual();
-            var productos = _context.Productos.Where(p => p.IdTienda == tienda.IdTienda);
-
-            return productos.ToList();
-        }
-
-        private async Task<bool> puedeEditarRedSocialAsync(int? idRedSocialAEditar)
-        {
-            var resultado = false;
-            if (idRedSocialAEditar != null)
-            {
-                var tiendaDeUsuario = await obtenerTiendaVendedorActual();
-                var redSocialAEditar = await _context.RedesSociales.FindAsync(idRedSocialAEditar);
-
-                if (redSocialAEditar.IdRedSocial == tiendaDeUsuario.RedSocial.IdRedSocial)
-                {
-                    resultado = true;
-                }
-            }
-            return resultado;
-        }
+        
 
 
     }

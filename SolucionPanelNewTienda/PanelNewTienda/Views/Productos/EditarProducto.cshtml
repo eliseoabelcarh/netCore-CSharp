@@ -87,8 +87,8 @@
 
                     }
 
-                    @Html.Partial("_cargarImagen", new ProdAux { IdDelProducto = Model.IdProducto, IdDeTienda = Model.IdTienda })
-
+                    @*@Html.Partial("_cargarImagen", new ProdAux { IdDelProducto = Model.IdProducto, IdDeTienda = Model.IdTienda })*@
+                    <partial name="_cargarImagen" model='new ProdAux { IdDelProducto = Model.IdProducto, IdDeTienda = Model.IdTienda }'>
 
                 </div>
             </div>

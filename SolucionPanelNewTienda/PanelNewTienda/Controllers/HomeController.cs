@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PanelNewTienda.Models;
@@ -14,6 +15,7 @@ namespace PanelNewTienda.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly NewTiendaService _app;
+        const string SessionName = "_Name";
 
         public HomeController(ILogger<HomeController> logger , NewTiendaService app)
         {
@@ -23,12 +25,16 @@ namespace PanelNewTienda.Controllers
 
         public IActionResult Index()
         {
-           
-            return View();
+        
+            HttpContext.Session.SetString(SessionName, "Jarvik");
+            
+            var listaProductos = _app.ObtenerTodosLosProductosPublicados();
+            return View(listaProductos);
         }
 
         public IActionResult Privacy()
         {
+            ViewBag.Name = HttpContext.Session.GetString(SessionName);
             return View();
         }
 

@@ -21,6 +21,18 @@ namespace PanelNewTienda.Services
             _httpContextAccessor = httpContextAccessor;
         }
 
+
+        public String ObtenerNombreDeTienda(int idTienda)
+        {
+            var tienda = _context.Tiendas.Find(idTienda);
+            return tienda.NombreTienda;
+        }
+        public List<Producto> ObtenerTodosLosProductosPublicados()
+        {
+            var listaProductos = _context.Productos.Where(p => p.Publicado == true);
+            return listaProductos.ToList();
+        }
+
         public async Task<Tienda> ObtenerTiendaVendedorActual()
         {
             try

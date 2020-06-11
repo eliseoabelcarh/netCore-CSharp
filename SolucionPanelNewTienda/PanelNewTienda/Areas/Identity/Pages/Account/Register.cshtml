@@ -27,7 +27,16 @@
                 <input asp-for="Input.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <button type="submit" class="btn btn-primary">Register</button>
+
+
+            <div class="form-group">
+                <label for="checkCuadro">Aceptar Términos de Plataformaa</label>
+                <input type="checkbox" id="checkCuadro" name="checkCuadro"  />
+
+            </div>
+
+
+            <button id="botonRegister" type="submit" class="btn btn-primary">Register</button>
         </form>
     </div>
     <div class="col-md-6 col-md-offset-2">
@@ -61,6 +70,34 @@
         </section>
     </div>
 </div>
+
+
+
+
+
+<script>
+
+    var botonRegister = document.getElementById("botonRegister");
+    botonRegister.addEventListener("click", validarCheckBox);
+
+    function validarCheckBox(event) {
+
+        var inputParaValidar = document.getElementById("checkCuadro");
+       
+        if (inputParaValidar.checked == false) {
+        
+            alert("Tienes que aceptar nustros términos")
+        
+            event.preventDefault();
+        } 
+
+    }
+
+
+</script>
+
+
+
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

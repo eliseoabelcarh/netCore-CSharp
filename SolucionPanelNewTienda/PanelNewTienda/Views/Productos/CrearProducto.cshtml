@@ -18,7 +18,7 @@
             <input type="hidden" asp-for="IdProducto" />
             <div class="form-group">
                 <label asp-for="NombreProducto" class="control-label"></label>
-                <input asp-for="NombreProducto" class="form-control" />
+                <input id="NombreProductoInput" asp-for="NombreProducto" class="form-control" required />
                 <span asp-validation-for="NombreProducto" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -71,7 +71,7 @@
 
 
             <div class="form-group">
-                <input type="submit" value="Guardar" class="btn btn-primary" />
+                <input  id ="botonEnviar" type="submit" value="Guardar" class="btn btn-primary" onclick="validarNombre()" />
             </div>
 
 
@@ -83,3 +83,32 @@
     <a asp-controller="Vendedores" asp-action="Productos">Regresar</a>
 </div>
 
+
+
+
+
+
+
+
+<script>
+  
+    var inputParaValidar = document.getElementById("NombreProductoInput");
+
+    function validarNombre() {
+        var inputParaValidar = document.getElementById("NombreProductoInput");
+
+        if (inputParaValidar.value == "") {
+                inputParaValidar.setCustomValidity("campo vacío invalidooooo");
+        } else {
+            inputParaValidar.setCustomValidity(""); 
+            console.log("todo bien");
+        }
+
+    }
+
+
+
+
+
+
+</script>

@@ -6,7 +6,7 @@
 
 
 <div class="text-center">
-    <h2 class="display-4">Productos Publicados</h2>
+    <h5>Productos Publicados</h5>
 </div>
 
 
@@ -18,44 +18,61 @@
 
 
 
-        <div class="card border-secondary mb-3 mr-3 d-inline-block" style="width: 18rem;">
+<div class="card border-secondary mb-3 mr-3 d-inline-block" style="width: 18rem;">
 
 
-            @{
-                if (prod.Imagen1 != null)
-                {
-                    string imageBase64Data = Convert.ToBase64String(prod.Imagen1);
-                    string imageDataURL = string.Format("data:image/jpg;base64,{0}", imageBase64Data);
+    @{
+        if (prod.Imagen1 != null)
+        {
+            string imageBase64Data = Convert.ToBase64String(prod.Imagen1);
+            string imageDataURL = string.Format("data:image/jpg;base64,{0}", imageBase64Data);
 
-                    <img class="card-img-top" src="@imageDataURL" alt="">
-                }
-                else
-                {
-                    <img class="card-img-top" src="~/imagenes/imagenDemo.svg" alt="">
-                }
+           
+            <div style="background-image:url(@imageDataURL); background-repeat:no-repeat; background-position: center center;background-size:cover; width:18rem;height:18rem;"></div>
+        }
+        else
+        {
+            <img class="card-img-top" src="~/imagenes/imagenDemo.svg" alt="" style="width:18rem;height:18rem;" >
+           
+        }
 
-            }
-
-
-
-
-            <div class="card-header">
-                @Html.DisplayFor(modelProd => prod.NombreProducto)
-            </div>
-
-            <div class="card-body">
-                <p class="card-text">@Html.DisplayFor(modelProd => prod.DescripcionProducto)</p>
-
-                <span class="badge badge-secondary h4">$@Html.DisplayFor(modelProd => prod.PrecioProducto)</span>
-
-                <span class="badge badge-info">Pertenece a: @service.ObtenerNombreDeTienda(prod.IdTienda)</span>
-
-            </div>
+    }
 
 
 
 
+    <div class="card-header">
+        @Html.DisplayFor(modelProd => prod.NombreProducto)
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">@Html.DisplayFor(modelProd => prod.DescripcionProducto)</p>
+
+        <div class="card-group">
+            <span class="badge badge-secondary h4">$@Html.DisplayFor(modelProd => prod.PrecioProducto)</span>
         </div>
+
+        <div class="card-group">
+            <span class="badge badge-info">Tienda: @service.ObtenerNombreDeTienda(prod.IdTienda)</span>
+        </div>
+
+        
+
+       
+
+    </div>
+
+    <div class="card-footer">
+
+        <input type="number" class="botonesCantidad" value="1" data-decimals="0" min="0" max="20" />
+        <button class="btn-primary">Agregar a Carrito</button>
+
+
+
+    </div>
+
+
+</div>
 
 
 
@@ -67,3 +84,5 @@ else
 {
     <div> ho hayprods</div>
 }
+
+

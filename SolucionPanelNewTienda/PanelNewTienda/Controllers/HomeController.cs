@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using PanelNewTienda.Models;
 using PanelNewTienda.Services;
 
@@ -23,10 +24,12 @@ namespace PanelNewTienda.Controllers
             _app = app;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> IndexAsync()
         {
-        
-            HttpContext.Session.SetString(SessionName, "Jarvik");
+
+            var product = await _app.ObtenerProductoPorId(2);
+
+            HttpContext.Session.SetString(SessionName, JsonConvert.SerializeObject(product));
             
             var listaProductos = _app.ObtenerTodosLosProductosPublicados();
             return View(listaProductos);
@@ -34,8 +37,18 @@ namespace PanelNewTienda.Controllers
 
         public IActionResult Privacy()
         {
-            ViewBag.Name = HttpContext.Session.GetString(SessionName);
-            return View();
+            try
+            {
+                var getSessionString = HttpContext.Session.GetString(SessionName);
+                var producto = JsonConvert.DeserializeObject<Producto>(getSessionString);
+                return View(producto);
+            }
+            catch (Exception)
+            {
+
+                return View();
+            }
+           
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

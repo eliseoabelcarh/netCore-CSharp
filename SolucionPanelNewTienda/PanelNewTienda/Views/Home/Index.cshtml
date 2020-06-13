@@ -28,7 +28,7 @@
             string imageDataURL = string.Format("data:image/jpg;base64,{0}", imageBase64Data);
 
            
-            <div style="background-image:url(@imageDataURL); background-repeat:no-repeat; background-position: center center;background-size:cover; width:18rem;height:18rem;"></div>
+            <div style="background-image:url(@imageDataURL); background-repeat:no-repeat; background-position: center center;background-size:cover; width:17.9rem;height:18rem;"></div>
         }
         else
         {
@@ -65,7 +65,8 @@
     <div class="card-footer">
 
         <input type="number" class="botonesCantidad" value="1" data-decimals="0" min="0" max="20" />
-        <button class="btn-primary">Agregar a Carrito</button>
+        <a class="btn btn-primary" asp-controller="Productos" asp-action="EditarProducto" asp-route-id="@prod.IdProducto">Agregar a Carrito</a>
+        
 
 
 

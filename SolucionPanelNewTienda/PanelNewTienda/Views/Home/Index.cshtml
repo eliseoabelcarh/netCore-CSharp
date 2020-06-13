@@ -1,19 +1,19 @@
-﻿@model IEnumerable<PanelNewTienda.Models.Producto>
+﻿@model IEnumerable<PanelNewTienda.Models.Tienda>
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Lista Tiendas";
 }
-@inject PanelNewTienda.Services.NewTiendaService service
+@*@inject PanelNewTienda.Services.NewTiendaService service*@
 
 
 <div class="text-center">
-    <h5>Productos Publicados</h5>
+    <h5>Tiendas Publicadas</h5>
 </div>
 
 
 
 @if (Model.Count() > 0)
 {
-    foreach (var prod in Model)
+    foreach (var tienda in Model)
     {
 
 
@@ -21,54 +21,38 @@
 <div class="card border-secondary mb-3 mr-3 d-inline-block" style="width: 18rem;">
 
 
-    @{
-        if (prod.Imagen1 != null)
-        {
-            string imageBase64Data = Convert.ToBase64String(prod.Imagen1);
-            string imageDataURL = string.Format("data:image/jpg;base64,{0}", imageBase64Data);
-
-           
-            <div style="background-image:url(@imageDataURL); background-repeat:no-repeat; background-position: center center;background-size:cover; width:17.9rem;height:18rem;"></div>
-        }
-        else
-        {
-            <img class="card-img-top" src="~/imagenes/imagenDemo.svg" alt="" style="width:18rem;height:18rem;" >
-           
-        }
-
-    }
-
-
-
 
     <div class="card-header">
-        @Html.DisplayFor(modelProd => prod.NombreProducto)
+        @Html.DisplayFor(modelProd => tienda.NombreTienda)
     </div>
 
     <div class="card-body">
-        <p class="card-text">@Html.DisplayFor(modelProd => prod.DescripcionProducto)</p>
-
-        <div class="card-group">
-            <span class="badge badge-secondary h4">$@Html.DisplayFor(modelProd => prod.PrecioProducto)</span>
-        </div>
-
-        <div class="card-group">
-            <span class="badge badge-info">Tienda: @service.ObtenerNombreDeTienda(prod.IdTienda)</span>
-        </div>
-
-        
 
        
+     
+
+        <div class="card-group">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fa fa-facebook"></i> : @Html.DisplayFor(m => tienda.RedSocial.Facebook)</li>
+                <li class="list-group-item"><i class="fa fa-instagram"></i> : @Html.DisplayFor(m => tienda.RedSocial.Instagram)</li>
+                <li class="list-group-item"><i class="fa fa-whatsapp"></i> : @Html.DisplayFor(m => tienda.RedSocial.Whatsapp)</li>
+                <li class="list-group-item"><i class="fa fa-twitter"></i> : @Html.DisplayFor(m => tienda.RedSocial.Twitter)</li>
+                <li class="list-group-item"><i class="fa fa-envelope"></i> : @Html.DisplayFor(m => tienda.RedSocial.Email)</li>
+
+            </ul>
+        </div>
+
+
+
 
     </div>
 
     <div class="card-footer">
 
-        <input type="number" class="botonesCantidad" value="1" data-decimals="0" min="0" max="20" />
-        <a class="btn btn-primary" asp-controller="Productos" asp-action="EditarProducto" asp-route-id="@prod.IdProducto">Agregar a Carrito</a>
+       
+        <a class="btn btn-primary" asp-controller="Home" asp-action="VerProductosDeTienda" asp-route-id="@tienda.IdTienda">Ver Productos</a>
         
-
-
+        
 
     </div>
 
@@ -83,7 +67,7 @@
 }
 else
 {
-    <div> ho hayprods</div>
+    <div> no hay tiendas</div>
 }
 
 

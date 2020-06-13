@@ -31,8 +31,37 @@ namespace PanelNewTienda.Controllers
 
             HttpContext.Session.SetString(SessionName, JsonConvert.SerializeObject(product));
             
-            var listaProductos = _app.ObtenerTodosLosProductosPublicados();
-            return View(listaProductos);
+            var listaTiendas = _app.ObtenerListaTiendasPublicadas();
+            var listaRedesSociales = _app.ObtenerTodasLasRedesSociales();
+
+            return View(listaTiendas);
+        }
+
+        public IActionResult VerProductosDeTienda(int id)
+        {
+           
+            var listaProductosDeTienda = _app.ObtenerProductoPorIdDeTienda(id);
+            ViewBag.NombreTienda = _app.ObtenerNombreDeTienda(id);
+            return View(listaProductosDeTienda);
+
+        }
+
+
+        [HttpGet]
+        public IActionResult AgregarACarrito(CarritoItem carritoItem)
+        {
+            var modelo = carritoItem;
+            return View(modelo);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AgregarACarritoAsync( CarritoItem carritoItem)
+        {
+            var producto = await _app.ObtenerProductoPorId(carritoItem.IdProducto);
+            var cantidad = carritoItem.Cantidad;
+            var l = 1+1;
+            return null;
+            //return RedirectToAction("EditarProducto", "Productos", new { @id = prodAux.IdProducto });
         }
 
         public IActionResult Privacy()

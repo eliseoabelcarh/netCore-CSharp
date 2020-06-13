@@ -1,0 +1,84 @@
+﻿@model IEnumerable<PanelNewTienda.Models.Producto>
+@inject PanelNewTienda.Services.NewTiendaService service
+@{
+    ViewData["Title"] = "VerProductosDeTienda";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Productos de: @ViewBag.NombreTienda</h3>
+
+
+
+@if (Model.Count() > 0)
+{
+    foreach (var prod in Model)
+    {
+
+
+
+<div class="card border-secondary mb-3 mr-3 d-inline-block" style="width: 18rem;">
+
+
+    @{
+        if (prod.Imagen1 != null)
+        {
+            string imageBase64Data = Convert.ToBase64String(prod.Imagen1);
+            string imageDataURL = string.Format("data:image/jpg;base64,{0}", imageBase64Data);
+
+
+            <div style="background-image:url(@imageDataURL); background-repeat:no-repeat; background-position: center center;background-size:cover; width:17.9rem;height:18rem;"></div>
+        }
+        else
+        {
+            <img class="card-img-top" src="~/imagenes/imagenDemo.svg" alt="" style="width:18rem;height:18rem;">
+
+        }
+
+    }
+
+
+
+
+
+    <div class="card-header">
+        @Html.DisplayFor(modelProd => prod.NombreProducto)
+    </div>
+
+    <div class="card-body">
+        <p class="card-text">@Html.DisplayFor(modelProd => prod.DescripcionProducto)</p>
+
+        <div class="card-group">
+            <span class="badge badge-secondary h4">$@Html.DisplayFor(modelProd => prod.PrecioProducto)</span>
+        </div>
+
+        <div class="card-group">
+            <span class="badge badge-info">Tienda: @service.ObtenerNombreDeTienda(prod.IdTienda)</span>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="card-footer">
+
+        <partial name="_AgregarACarrito" model='new CarritoItem { IdProducto = prod.IdProducto, Cantidad = 5}'>
+
+    </div>
+
+
+    <div class="card-group">
+        <span class="badge badge-info">Tienda: @service.ObtenerNombreDeTienda(prod.IdTienda)</span>
+    </div>
+
+</div>
+
+
+    }
+}
+else
+{
+    <div> no hay productos</div>
+}
+

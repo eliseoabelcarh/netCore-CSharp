@@ -21,6 +21,11 @@ namespace PanelNewTienda.Services
             _httpContextAccessor = httpContextAccessor;
         }
 
+        public List<Tienda> ObtenerListaTiendasPublicadas() 
+        {
+            var listaTiendas = _context.Tiendas.Where(t => t.Publicada==true);
+            return listaTiendas.ToList();
+        }
 
         public String ObtenerNombreDeTienda(int idTienda)
         {
@@ -31,6 +36,24 @@ namespace PanelNewTienda.Services
         {
             var listaProductos = _context.Productos.Where(p => p.Publicado == true);
             return listaProductos.ToList();
+        }
+
+        public List<Producto> ObtenerProductoPorIdDeTienda(int id)
+        {
+            var productos = _context.Productos.Where(p => p.IdTienda == id && p.Publicado == true);
+            return productos.ToList();
+        }
+
+        public async Task<Tienda> ObtenerTiendaPorIdAsync(int id)
+        {
+            var tienda = await _context.Tiendas.FirstOrDefaultAsync(t => t.IdTienda == id);
+            return tienda;
+        }
+
+        public List<RedSocial> ObtenerTodasLasRedesSociales()
+        {
+            var listaRedes = _context.RedesSociales;
+            return listaRedes.ToList();
         }
 
         public async Task<Tienda> ObtenerTiendaVendedorActual()

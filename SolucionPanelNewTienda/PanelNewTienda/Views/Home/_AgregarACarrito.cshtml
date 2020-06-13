@@ -1,0 +1,21 @@
+﻿
+
+@model PanelNewTienda.Models.CarritoItem
+
+
+
+    <form asp-action="AgregarACarrito" asp-controller="Home" method="post" enctype="multipart/form-data">
+
+
+      
+
+
+            <input input asp-for="@Model.Cantidad" type="number" class="botonesCantidad" value="1" data-decimals="0" min="0" max="20" />
+            
+            <input formaction="/Home/AgregarACarrito" formmethod="post" type="submit" value="Agregar a Carrito" class="btn btn-primary" />
+
+       
+
+
+
+    </form>

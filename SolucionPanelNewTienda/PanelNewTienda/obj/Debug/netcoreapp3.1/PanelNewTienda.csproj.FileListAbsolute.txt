@@ -505,3 +505,6 @@ D:\ORT\netCore-CSharp\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp
 D:\ORT\netCore-CSharp\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.dll
 D:\ORT\netCore-CSharp\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.pdb
 D:\ORT\netCore-CSharp\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\PanelNewTienda.genruntimeconfig.cache
+D:\ORT\netCore-CSharp\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index - Copia.cshtml.g.cs
+D:\ORT\netCore-CSharp\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\VerProductosDeTienda.cshtml.g.cs
+D:\ORT\netCore-CSharp\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\_AgregarACarrito.cshtml.g.cs

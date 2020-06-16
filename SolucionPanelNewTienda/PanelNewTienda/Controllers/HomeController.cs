@@ -16,7 +16,7 @@ namespace PanelNewTienda.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly NewTiendaService _app;
-        const string SessionName = "_Name";
+        const string SessionName = "Carrito";
 
         public HomeController(ILogger<HomeController> logger , NewTiendaService app)
         {
@@ -24,13 +24,58 @@ namespace PanelNewTienda.Controllers
             _app = app;
         }
 
-        public async Task<IActionResult> IndexAsync()
+
+        public void GuardarLaListaEnLaSesion(List<CarritoItem> items)
+        {
+            
+            HttpContext.Session.SetString(SessionName, JsonConvert.SerializeObject(items));
+        }
+
+        public List<CarritoItem> ObtenerListaConItemsDeSesion()
+        {
+            try
+            {
+                var listaEnString = HttpContext.Session.GetString(SessionName);
+
+                if(listaEnString == null)
+                {
+                    var listaNueva = new List<CarritoItem>();
+                    GuardarLaListaEnLaSesion(listaNueva);
+                    var lista = HttpContext.Session.GetString(SessionName);
+                    var listaDeItemsDeCarrito1 = JsonConvert.DeserializeObject<List<CarritoItem>>(lista);
+
+                    return listaDeItemsDeCarrito1;
+                }
+
+                var listaDeItemsDeCarrito = JsonConvert.DeserializeObject<List<CarritoItem>>(listaEnString);
+                return listaDeItemsDeCarrito;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+        }
+
+        public bool GuardarUnItemEnSesionCarrito(CarritoItem item)
+        {
+            bool resultado = false;
+            if (item != null)
+            {
+                var listaDeItemsDeCarrito = ObtenerListaConItemsDeSesion();
+                if (listaDeItemsDeCarrito != null) 
+                {
+                    listaDeItemsDeCarrito.Add(item);
+                    GuardarLaListaEnLaSesion(listaDeItemsDeCarrito);
+                    resultado = true;
+                }
+            }
+            return resultado;
+        }
+
+        public IActionResult Index()
         {
 
-            var product = await _app.ObtenerProductoPorId(2);
-
-            HttpContext.Session.SetString(SessionName, JsonConvert.SerializeObject(product));
-            
             var listaTiendas = _app.ObtenerListaTiendasPublicadas();
             var listaRedesSociales = _app.ObtenerTodasLasRedesSociales();
 
@@ -48,36 +93,52 @@ namespace PanelNewTienda.Controllers
 
 
         [HttpGet]
-        public IActionResult AgregarACarrito(CarritoItem carritoItem)
+        public IActionResult AgregarACarrito(CarritoItemAux carritoItemAux)
         {
-            var modelo = carritoItem;
+            var modelo = carritoItemAux;
             return View(modelo);
         }
 
         [HttpPost]
-        public async Task<IActionResult> AgregarACarritoAsync( CarritoItem carritoItem)
+        public async Task<IActionResult> AgregarACarritoAsync(CarritoItemAux carritoItemAux)
         {
-            var producto = await _app.ObtenerProductoPorId(carritoItem.IdProducto);
-            var cantidad = carritoItem.Cantidad;
-            var l = 1+1;
-            return null;
-            //return RedirectToAction("EditarProducto", "Productos", new { @id = prodAux.IdProducto });
+            var producto = await _app.ObtenerProductoPorId(carritoItemAux.IdProducto);
+            var cantidad = carritoItemAux.Cantidad;
+
+            var itemDeCarrito = new CarritoItem { IdTienda=producto.IdTienda,Producto=producto,Cantidad=cantidad,PrecioCarritoItem=cantidad*producto.PrecioProducto };
+
+            var agregadoExitosamente = GuardarUnItemEnSesionCarrito(itemDeCarrito);
+
+            if(agregadoExitosamente)
+            {
+                return RedirectToAction("CarritoDeCompras", "Home");
+            }
+            
+            return RedirectToAction("VerProductosDeTienda", "Home", new { @id = producto.IdTienda });
         }
 
+        [HttpGet]
+        public IActionResult CarritoDeCompras()
+        {
+
+            var listaDeProductosEnElCarrito = ObtenerListaConItemsDeSesion();
+            return View(listaDeProductosEnElCarrito);
+        }
+
+        [HttpGet]
+        public IActionResult MostrarPopup(CarritoItemAux carritoItemAux)
+        {
+            var resultadoDeAgregadoACarrito = AgregarACarritoAsync(carritoItemAux);
+
+            var popupModel = new PopupModel { Mensaje = "agregadoExitoso" };
+            
+            return View(popupModel);
+        }
         public IActionResult Privacy()
         {
-            try
-            {
-                var getSessionString = HttpContext.Session.GetString(SessionName);
-                var producto = JsonConvert.DeserializeObject<Producto>(getSessionString);
-                return View(producto);
-            }
-            catch (Exception)
-            {
 
                 return View();
-            }
-           
+       
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

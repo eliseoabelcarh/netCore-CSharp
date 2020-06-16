@@ -1,0 +1,49 @@
+﻿@model IEnumerable<PanelNewTienda.Models.CarritoItem>
+
+@{
+    ViewData["Title"] = "CarritoDeCompras";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>CarritoDeCompras</h1>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdTienda)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cantidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Producto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioCarritoItem)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTienda)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Producto.NombreProducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioCarritoItem)
+            </td>
+
+        </tr>
+}
+    </tbody>
+</table>

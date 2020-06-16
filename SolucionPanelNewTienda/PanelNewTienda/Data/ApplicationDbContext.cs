@@ -20,8 +20,9 @@ namespace PanelNewTienda.Data
         public virtual DbSet<RedSocial> RedesSociales { get; set; }
         public virtual DbSet<Producto> Productos { get; set; }
         public virtual DbSet<Imagen> Imagenes { get; set; }
+       
 
-
+        
 
 
 

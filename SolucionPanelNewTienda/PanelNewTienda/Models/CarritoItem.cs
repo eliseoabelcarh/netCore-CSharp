@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -8,13 +10,20 @@ namespace PanelNewTienda.Models
 {
     public class CarritoItem
     {
-        [Key]
-        public int IdCarritoItem { get; set; }
 
-        public int IdProducto { get; set; }
-        public virtual Producto ProductoCarritoItem { get; set; }
+        [DisplayName("Nro de Tienda")]
+        public int IdTienda { get; set; }
+
+
+        [DisplayName("Nombre de Producto")]
+        public virtual Producto Producto {get;set;}
+
         public int Cantidad { get; set; }
-        public double TotalCarritoItem { get; set; }
 
+
+        [DisplayName("SubTotal")]
+        public double PrecioCarritoItem { get; set; }
+
+        
     }
 }

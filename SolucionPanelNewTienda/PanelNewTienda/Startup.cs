@@ -48,7 +48,7 @@ namespace PanelNewTienda
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddTransient<NewTiendaService>();//THIS IS MY OWN SERVICE
+            services.AddTransient<NewTiendaService>();//MY OWN SERVICE
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.EntityFrameworkCore;
 using PanelNewTienda.Data;
 using PanelNewTienda.Models;
@@ -105,6 +106,11 @@ namespace PanelNewTienda.Services
             return productos.ToList();
         }
 
+        internal bool ExisteIdProductoEnLista(List<CarritoItem> listaDeSesion, int idProducto)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<bool> AgregarProductoNuevoABD(Producto producto)
         {
           
@@ -143,6 +149,34 @@ namespace PanelNewTienda.Services
            
         }
 
+        internal async Task<List<CarritoItem>> ActualizarPreciosAsync(List<CarritoItem> lista)
+        {
+            
+            foreach (var item in lista) 
+            {
+                var idProducto = item.Producto.IdProducto;
+                var precioProducto = await ObtenerPrecioDeProductoPorIdAsync(idProducto);
+                var cantidad = item.Cantidad;
+                item.Producto.NombreProducto = await ObtenerNombreDeProductoPorIdAsync(idProducto);
+                item.PrecioCarritoItem = cantidad*precioProducto;
+            }
+            return lista;
+
+        }
+
+        private async Task<string> ObtenerNombreDeProductoPorIdAsync(int idProducto)
+        {
+            var producto = await ObtenerProductoPorId(idProducto);
+            return producto.NombreProducto;
+        }
+
+        internal async Task<double> ObtenerPrecioDeProductoPorIdAsync(int? id)
+        {
+            var producto = await ObtenerProductoPorId(id);
+            var precioProducto = producto.PrecioProducto;
+            return precioProducto;
+
+        }
         internal async Task<Producto> ObtenerProductoPorId(int? id)
         {
             var producto = await _context.Productos.FindAsync(id);

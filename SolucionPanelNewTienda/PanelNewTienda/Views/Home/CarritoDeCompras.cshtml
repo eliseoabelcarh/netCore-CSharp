@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PanelNewTienda.Models.CarritoItem>
+﻿@model List<PanelNewTienda.Models.CarritoItem>
 
 @{
     ViewData["Title"] = "CarritoDeCompras";
@@ -8,42 +8,75 @@
 <h1>CarritoDeCompras</h1>
 
 
+@if (Model.Count() <= 0)
+{
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.IdTienda)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cantidad)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Producto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PrecioCarritoItem)
-            </th>
+    <div>No hay Productos en tu Carrito</div>
 
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdTienda)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cantidad)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Producto.NombreProducto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PrecioCarritoItem)
-            </td>
-
-        </tr>
 }
-    </tbody>
-</table>
+else
+{
+
+    <form asp-action="ActualizarCarritoDeCompras" asp-controller="Home" method="post">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col"> Vendedor</th>
+                    <th scope="col">  @Html.DisplayNameFor(model => Model[0].Producto)</th>
+                    <th scope="col">@Html.DisplayNameFor(model => Model[0].Cantidad)</th>
+                    <th scope="col"> @Html.DisplayNameFor(model => Model[0].PrecioCarritoItem)</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                @for (var i = 0; i < Model.Count(); i++)
+                {
+                    <tr>
+
+                        <th scope="row">
+
+                            <input type="hidden" asp-for="@Model[i].IdTienda" />
+                            Tienda @Html.DisplayFor(modelItem => @Model[i].IdTienda)
+
+                        </th>
+
+                        <td>
+                            <input type="hidden" asp-for="@Model[i].Producto.IdProducto" />
+                            @Html.DisplayFor(modelItem => @Model[i].Producto.NombreProducto)
+                        </td>
+
+                        <td>
+
+                            <input asp-for="@Model[i].Cantidad" type="number" class="botonesCantidad" data-decimals="0" min="1" max="20" />
+
+                        </td>
+
+                        <td>
+
+                            @Html.DisplayFor(modelItem => @Model[i].PrecioCarritoItem)
+                        </td>
+
+                        <td>
+                            <a class="btn btn-primary" asp-controller="Home" asp-action="EliminarProductoDeMiCarrito" asp-route-id="@Model[i].Producto.IdProducto">Eliminar</a>
+                        </td>
+
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+        <input type="submit" value="Guardar Cambios" class="btn btn-primary" />
+
+    </form>
+
+
+
+}
+
+
+
+
+

@@ -105,16 +105,33 @@ namespace PanelNewTienda.Controllers
             var producto = await _app.ObtenerProductoPorId(carritoItemAux.IdProducto);
             var cantidad = carritoItemAux.Cantidad;
 
-            var itemDeCarrito = new CarritoItem { IdTienda=producto.IdTienda,Producto=producto,Cantidad=cantidad,PrecioCarritoItem=cantidad*producto.PrecioProducto };
+            var listaDeSesion = ObtenerListaConItemsDeSesion();
 
-            var agregadoExitosamente = GuardarUnItemEnSesionCarrito(itemDeCarrito);
-
-            if(agregadoExitosamente)
+            var i = 0;
+            bool encontrado = false;
+            while (!encontrado && i < listaDeSesion.Count())
             {
-                return RedirectToAction("CarritoDeCompras", "Home");
+                if (listaDeSesion[i].Producto.IdProducto == producto.IdProducto) 
+                {
+                    encontrado = true;
+                    listaDeSesion[i].Cantidad += carritoItemAux.Cantidad;
+                }
+                i++;
             }
-            
-            return RedirectToAction("VerProductosDeTienda", "Home", new { @id = producto.IdTienda });
+
+            if (encontrado==false) 
+            {
+                var itemDeCarrito = new CarritoItem { IdTienda = producto.IdTienda, Producto = producto, Cantidad = cantidad, PrecioCarritoItem = cantidad * producto.PrecioProducto };
+                var agregadoExitosamente = GuardarUnItemEnSesionCarrito(itemDeCarrito);
+                if (agregadoExitosamente)
+                {
+                    return RedirectToAction("CarritoDeCompras", "Home");
+                }
+            }
+            var listaActualizada =await _app.ActualizarPreciosAsync(listaDeSesion);
+            GuardarLaListaEnLaSesion(listaActualizada);
+            return RedirectToAction("CarritoDeCompras", "Home");
+            //return RedirectToAction("VerProductosDeTienda", "Home", new { @id = producto.IdTienda });
         }
 
         [HttpGet]
@@ -125,14 +142,32 @@ namespace PanelNewTienda.Controllers
             return View(listaDeProductosEnElCarrito);
         }
 
-        [HttpGet]
-        public IActionResult MostrarPopup(CarritoItemAux carritoItemAux)
-        {
-            var resultadoDeAgregadoACarrito = AgregarACarritoAsync(carritoItemAux);
 
-            var popupModel = new PopupModel { Mensaje = "agregadoExitoso" };
-            
-            return View(popupModel);
+        [HttpPost]
+        public async Task<IActionResult> ActualizarCarritoDeComprasAsync(List<CarritoItem> listaDeItemsDeCarrito)
+        {
+            var listaActualizada =await _app.ActualizarPreciosAsync(listaDeItemsDeCarrito);
+            GuardarLaListaEnLaSesion(listaActualizada);
+            return RedirectToAction("CarritoDeCompras", "Home");
+        }
+
+
+        public IActionResult EliminarProductoDeMiCarrito(int? id) 
+        {
+            var i = 0;
+            bool encontrado = false;
+            var listaDeSesion = ObtenerListaConItemsDeSesion();
+            while (!encontrado && i < listaDeSesion.Count()) 
+            {
+                if (listaDeSesion[i].Producto.IdProducto==id)
+                {
+                    listaDeSesion.RemoveAt(i);
+                    encontrado = true;
+                }
+                i++;
+            }
+            GuardarLaListaEnLaSesion(listaDeSesion);
+            return RedirectToAction("CarritoDeCompras", "Home");
         }
         public IActionResult Privacy()
         {

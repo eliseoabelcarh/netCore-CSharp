@@ -17,60 +17,117 @@
 else
 {
 
-    <form asp-action="ActualizarCarritoDeCompras" asp-controller="Home" method="post">
+<form method="post">
+
+    <input type="submit" value="Guardar Cambios" class="btn btn-primary" asp-action="ActualizarCarritoDeCompras" asp-controller="Home" />
+    <input type="submit" value="Checkout==>" class="btn btn-primary" asp-controller="Home" asp-action="Checkout" />
+
+
+
+    @foreach (var nroTienda in @ViewBag.listaNrosTiendas)
+    {
+        double totalTienda = 0;
+
 
         <table class="table table-striped">
+
             <thead>
                 <tr>
                     <th scope="col"> Vendedor</th>
                     <th scope="col">  @Html.DisplayNameFor(model => Model[0].Producto)</th>
                     <th scope="col">@Html.DisplayNameFor(model => Model[0].Cantidad)</th>
                     <th scope="col"> @Html.DisplayNameFor(model => Model[0].PrecioCarritoItem)</th>
-
+                    <th></th>
                 </tr>
             </thead>
-            <tbody>
 
-                @for (var i = 0; i < Model.Count(); i++)
+
+            @for (var i = 0; i < Model.Count(); i++)
+            {
+
+
+
+
+
+                @if (@Model[i].IdTienda == nroTienda)
                 {
-                    <tr>
 
-                        <th scope="row">
 
-                            <input type="hidden" asp-for="@Model[i].IdTienda" />
-                            Tienda @Html.DisplayFor(modelItem => @Model[i].IdTienda)
 
-                        </th>
 
-                        <td>
-                            <input type="hidden" asp-for="@Model[i].Producto.IdProducto" />
-                            @Html.DisplayFor(modelItem => @Model[i].Producto.NombreProducto)
-                        </td>
 
-                        <td>
 
-                            <input asp-for="@Model[i].Cantidad" type="number" class="botonesCantidad" data-decimals="0" min="1" max="20" />
+                    <tbody>
 
-                        </td>
 
-                        <td>
 
-                            @Html.DisplayFor(modelItem => @Model[i].PrecioCarritoItem)
-                        </td>
 
-                        <td>
-                            <a class="btn btn-primary" asp-controller="Home" asp-action="EliminarProductoDeMiCarrito" asp-route-id="@Model[i].Producto.IdProducto">Eliminar</a>
-                        </td>
+                        <tr>
 
-                    </tr>
+                            <th scope="row">
+
+                                <input type="hidden" asp-for="@Model[i].IdTienda" />
+                                Tienda @Html.DisplayFor(modelItem => @Model[i].IdTienda)
+
+                            </th>
+
+                            <td>
+                                <input type="hidden" asp-for="@Model[i].Producto.IdProducto" />
+                                @Html.DisplayFor(modelItem => @Model[i].Producto.NombreProducto)
+                            </td>
+
+                            <td>
+
+                                <input asp-for="@Model[i].Cantidad" type="number" class="botonesCantidad" data-decimals="0" min="1" max="20" />
+
+                            </td>
+
+                            <td>
+
+                                @Html.DisplayFor(modelItem => @Model[i].PrecioCarritoItem)
+                                @{totalTienda += @Model[i].PrecioCarritoItem;}
+                            </td>
+
+                            <td>
+                                <a class="btn btn-primary" asp-controller="Home" asp-action="EliminarProductoDeMiCarrito" asp-route-id="@Model[i].Producto.IdProducto">Eliminar</a>
+                            </td>
+
+                        </tr>
+
+
+
+
+                    </tbody>
+
+
+
+
                 }
 
 
-            </tbody>
-        </table>
-        <input type="submit" value="Guardar Cambios" class="btn btn-primary" />
 
-    </form>
+
+            }
+
+
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <th scope="row">Total:</th>
+                    <th scope="row">@totalTienda</th>
+                </tr>
+            </tfoot>
+
+        </table>
+
+
+        <br />
+
+    }
+
+
+</form>
 
 
 

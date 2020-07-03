@@ -18,7 +18,7 @@ namespace PanelNewTienda.Controllers
         private readonly NewTiendaService _app;
         const string SessionName = "Carrito";
 
-        public HomeController(ILogger<HomeController> logger , NewTiendaService app)
+        public HomeController(ILogger<HomeController> logger, NewTiendaService app)
         {
             _logger = logger;
             _app = app;
@@ -27,7 +27,7 @@ namespace PanelNewTienda.Controllers
 
         public void GuardarLaListaEnLaSesion(List<CarritoItem> items)
         {
-            
+
             HttpContext.Session.SetString(SessionName, JsonConvert.SerializeObject(items));
         }
 
@@ -37,7 +37,7 @@ namespace PanelNewTienda.Controllers
             {
                 var listaEnString = HttpContext.Session.GetString(SessionName);
 
-                if(listaEnString == null)
+                if (listaEnString == null)
                 {
                     var listaNueva = new List<CarritoItem>();
                     GuardarLaListaEnLaSesion(listaNueva);
@@ -63,7 +63,7 @@ namespace PanelNewTienda.Controllers
             if (item != null)
             {
                 var listaDeItemsDeCarrito = ObtenerListaConItemsDeSesion();
-                if (listaDeItemsDeCarrito != null) 
+                if (listaDeItemsDeCarrito != null)
                 {
                     listaDeItemsDeCarrito.Add(item);
                     GuardarLaListaEnLaSesion(listaDeItemsDeCarrito);
@@ -84,7 +84,7 @@ namespace PanelNewTienda.Controllers
 
         public IActionResult VerProductosDeTienda(int id)
         {
-           
+
             var listaProductosDeTienda = _app.ObtenerProductoPorIdDeTienda(id);
             ViewBag.NombreTienda = _app.ObtenerNombreDeTienda(id);
             return View(listaProductosDeTienda);
@@ -111,7 +111,7 @@ namespace PanelNewTienda.Controllers
             bool encontrado = false;
             while (!encontrado && i < listaDeSesion.Count())
             {
-                if (listaDeSesion[i].Producto.IdProducto == producto.IdProducto) 
+                if (listaDeSesion[i].Producto.IdProducto == producto.IdProducto)
                 {
                     encontrado = true;
                     listaDeSesion[i].Cantidad += carritoItemAux.Cantidad;
@@ -119,7 +119,7 @@ namespace PanelNewTienda.Controllers
                 i++;
             }
 
-            if (encontrado==false) 
+            if (encontrado == false)
             {
                 var itemDeCarrito = new CarritoItem { IdTienda = producto.IdTienda, Producto = producto, Cantidad = cantidad, PrecioCarritoItem = cantidad * producto.PrecioProducto };
                 var agregadoExitosamente = GuardarUnItemEnSesionCarrito(itemDeCarrito);
@@ -128,7 +128,7 @@ namespace PanelNewTienda.Controllers
                     return RedirectToAction("CarritoDeCompras", "Home");
                 }
             }
-            var listaActualizada =await _app.ActualizarPreciosAsync(listaDeSesion);
+            var listaActualizada = await _app.ActualizarPreciosAsync(listaDeSesion);
             GuardarLaListaEnLaSesion(listaActualizada);
             return RedirectToAction("CarritoDeCompras", "Home");
             //return RedirectToAction("VerProductosDeTienda", "Home", new { @id = producto.IdTienda });
@@ -139,6 +139,7 @@ namespace PanelNewTienda.Controllers
         {
 
             var listaDeProductosEnElCarrito = ObtenerListaConItemsDeSesion();
+            ViewBag.listaNrosTiendas = _app.ObtenerListaConLosNrosTiendaExistentesEnCarrito(listaDeProductosEnElCarrito);
             return View(listaDeProductosEnElCarrito);
         }
 
@@ -146,20 +147,20 @@ namespace PanelNewTienda.Controllers
         [HttpPost]
         public async Task<IActionResult> ActualizarCarritoDeComprasAsync(List<CarritoItem> listaDeItemsDeCarrito)
         {
-            var listaActualizada =await _app.ActualizarPreciosAsync(listaDeItemsDeCarrito);
+            var listaActualizada = await _app.ActualizarPreciosAsync(listaDeItemsDeCarrito);
             GuardarLaListaEnLaSesion(listaActualizada);
             return RedirectToAction("CarritoDeCompras", "Home");
         }
 
 
-        public IActionResult EliminarProductoDeMiCarrito(int? id) 
+        public IActionResult EliminarProductoDeMiCarrito(int? id)
         {
             var i = 0;
             bool encontrado = false;
             var listaDeSesion = ObtenerListaConItemsDeSesion();
-            while (!encontrado && i < listaDeSesion.Count()) 
+            while (!encontrado && i < listaDeSesion.Count())
             {
-                if (listaDeSesion[i].Producto.IdProducto==id)
+                if (listaDeSesion[i].Producto.IdProducto == id)
                 {
                     listaDeSesion.RemoveAt(i);
                     encontrado = true;
@@ -169,6 +170,58 @@ namespace PanelNewTienda.Controllers
             GuardarLaListaEnLaSesion(listaDeSesion);
             return RedirectToAction("CarritoDeCompras", "Home");
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Checkout(List<CarritoItem> listaDeItemsDeCarrito)
+        {
+
+            var listaActualizada = await _app.ActualizarPreciosAsync(listaDeItemsDeCarrito);
+            GuardarLaListaEnLaSesion(listaActualizada);
+            var listaDeProductosEnElCarrito = ObtenerListaConItemsDeSesion();
+            ViewBag.listaNrosTiendas = _app.ObtenerListaConLosNrosTiendaExistentesEnCarrito(listaDeProductosEnElCarrito);
+            return View(listaDeProductosEnElCarrito);
+        }
+
+
+
+        public async Task<IActionResult> PedirPorWhatsappAsync(int id)
+        {
+            var urlConPedido = await ObtenerUrlConPedidoDeTiendaAsync(id);
+
+            return Redirect(urlConPedido);
+        }
+
+        private async Task<string> ObtenerUrlConPedidoDeTiendaAsync(int id)
+        {
+            var urlFinal = "https://api.whatsapp.com/send?phone=54";
+            var miweb = "abel.com";
+            var saltoLinea = "%0A";
+            var espacio = "%20";
+            var lineas = "-----------";
+            var listaConItemsTotal = ObtenerListaConItemsDeSesion();
+            var listaDeTiendaEspecifica = _app.ObtenerlistaDeTiendaEspecifica(listaConItemsTotal,id);
+            var tienda = await _app.ObtenerTiendaPorIdAsync(id);
+            var redSocial1 = await _app.ObtenerRedSocialPorId(tienda.IdRedSocial);
+            //var redSocial = await _app.ObtenerRedSocialPorIdDeTiendaAsync(tienda.IdTienda);
+            var nroWhatsapp = redSocial1.Whatsapp;
+            urlFinal += (nroWhatsapp + "&text=%20");
+            urlFinal += ("*PEDIDO DESDE " + miweb + "*" + espacio + saltoLinea);
+            double total = 0;
+            foreach(var item in listaDeTiendaEspecifica)
+            {
+                var nombreProducto = item.Producto.NombreProducto;
+                var cantidad = item.Cantidad;
+                var subtotal = item.PrecioCarritoItem;
+                total += subtotal;
+
+                urlFinal += "*Producto:*" + espacio + nombreProducto + saltoLinea + "*Cantidad:*" + espacio + cantidad + saltoLinea + "*Subtotal:*" + espacio + subtotal + saltoLinea + lineas + saltoLinea;
+            }
+            var precioTotal = "*Total a Pagar:*"+espacio + "*" +total+ "*";
+            urlFinal += precioTotal;
+
+            return urlFinal;
+        }
+
         public IActionResult Privacy()
         {
 

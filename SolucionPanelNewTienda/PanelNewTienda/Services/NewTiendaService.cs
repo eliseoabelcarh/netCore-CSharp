@@ -6,6 +6,7 @@ using PanelNewTienda.Data;
 using PanelNewTienda.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -24,8 +25,15 @@ namespace PanelNewTienda.Services
 
         public List<Tienda> ObtenerListaTiendasPublicadas() 
         {
-            var listaTiendas = _context.Tiendas.Where(t => t.Publicada==true);
-            return listaTiendas.ToList();
+            try
+            {
+                var listaTiendas = _context.Tiendas.Where(t => t.Publicada == true);
+                return listaTiendas.ToList();
+            }
+            catch (Exception)
+            {
+                return new List<Tienda>();
+            }
         }
 
         public String ObtenerNombreDeTienda(int idTienda)
@@ -164,6 +172,21 @@ namespace PanelNewTienda.Services
 
         }
 
+        internal List<int> ObtenerListaConLosNrosTiendaExistentesEnCarrito(List<CarritoItem> listaItems)
+        {
+            var listaConNrosTienda = new List<int>();
+
+            foreach(var item in listaItems)
+            {
+                var nroTienda = item.IdTienda;
+                if(!listaConNrosTienda.Contains(nroTienda))
+                {
+                    listaConNrosTienda.Add(nroTienda);
+                }
+            }
+            return listaConNrosTienda;
+        }
+
         private async Task<string> ObtenerNombreDeProductoPorIdAsync(int idProducto)
         {
             var producto = await ObtenerProductoPorId(idProducto);
@@ -210,8 +233,27 @@ namespace PanelNewTienda.Services
             return resultado;
         }
 
+        internal async Task<RedSocial> ObtenerRedSocialPorIdDeTiendaAsync(int idTienda)
+        {
+            var tienda = await ObtenerTiendaPorIdAsync(idTienda);
+            var redSocial = _context.RedesSociales.Where(r => r.Whatsapp != "");
+            var LaRedSocial = tienda.RedSocial;
+            
+            return LaRedSocial;
+        }
 
-
+        internal List<CarritoItem> ObtenerlistaDeTiendaEspecifica(List<CarritoItem> lista, int id)
+        {
+            List<CarritoItem> listaNueva = new List<CarritoItem>();
+           foreach(var item in lista)
+            {
+                if(item.IdTienda == id)
+                {
+                    listaNueva.Add(item);
+                }
+            }
+            return listaNueva;
+        }
 
         public async Task<bool> PuedeEditarProductoAsync(int? idProductoAEditar)
         {

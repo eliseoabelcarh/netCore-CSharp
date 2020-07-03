@@ -509,3 +509,4 @@ D:\ORT\netCore-CSharp\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp
 D:\ORT\netCore-CSharp\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\VerProductosDeTienda.cshtml.g.cs
 D:\ORT\netCore-CSharp\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\_AgregarACarrito.cshtml.g.cs
 D:\ORT\netCore-CSharp\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\CarritoDeCompras.cshtml.g.cs
+D:\ORT\netCore-CSharp\SolucionPanelNewTienda\PanelNewTienda\obj\Debug\netcoreapp3.1\Razor\Views\Home\Checkout.cshtml.g.cs

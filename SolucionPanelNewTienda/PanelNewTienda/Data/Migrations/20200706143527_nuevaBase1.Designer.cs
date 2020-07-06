@@ -10,8 +10,8 @@ using PanelNewTienda.Data;
 namespace PanelNewTienda.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200523033321_7")]
-    partial class _7
+    [Migration("20200706143527_nuevaBase1")]
+    partial class nuevaBase1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

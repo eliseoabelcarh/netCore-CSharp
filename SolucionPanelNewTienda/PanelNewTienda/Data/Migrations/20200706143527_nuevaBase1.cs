@@ -2,7 +2,7 @@
 
 namespace PanelNewTienda.Data.Migrations
 {
-    public partial class _7 : Migration
+    public partial class nuevaBase1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

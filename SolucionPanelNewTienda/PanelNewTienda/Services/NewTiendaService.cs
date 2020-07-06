@@ -56,6 +56,7 @@ namespace PanelNewTienda.Services
         public async Task<Tienda> ObtenerTiendaPorIdAsync(int id)
         {
             var tienda = await _context.Tiendas.FirstOrDefaultAsync(t => t.IdTienda == id);
+            var redes = ObtenerTodasLasRedesSociales();
             return tienda;
         }
 

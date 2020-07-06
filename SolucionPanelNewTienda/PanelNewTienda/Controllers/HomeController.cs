@@ -201,9 +201,8 @@ namespace PanelNewTienda.Controllers
             var listaConItemsTotal = ObtenerListaConItemsDeSesion();
             var listaDeTiendaEspecifica = _app.ObtenerlistaDeTiendaEspecifica(listaConItemsTotal,id);
             var tienda = await _app.ObtenerTiendaPorIdAsync(id);
-            var redSocial1 = await _app.ObtenerRedSocialPorId(tienda.IdRedSocial);
-            //var redSocial = await _app.ObtenerRedSocialPorIdDeTiendaAsync(tienda.IdTienda);
-            var nroWhatsapp = redSocial1.Whatsapp;
+
+            var nroWhatsapp = tienda.RedSocial.Whatsapp;
             urlFinal += (nroWhatsapp + "&text=%20");
             urlFinal += ("*PEDIDO DESDE " + miweb + "*" + espacio + saltoLinea);
             double total = 0;

@@ -53,7 +53,7 @@ namespace PanelNewTienda.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CrearProducto([Bind("IdProducto,NombreProducto,DescripcionProducto,PrecioProducto,IdTienda,Imagen1")] Producto producto)
+        public async Task<IActionResult> CrearProducto([Bind("IdProducto,NombreProducto,DescripcionProducto,Publicado,PrecioProducto,IdTienda,Imagen1")] Producto producto)
         {
             if (ModelState.IsValid)
             {

@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using PanelNewTienda.Models;
 using PanelNewTienda.Services;
 
@@ -233,5 +235,49 @@ namespace PanelNewTienda.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+
+
+        [HttpGet]
+        public async Task<ActionResult<string>> GetKitty()
+        {
+            
+            string url = "https://api.cryptokitties.co/kitties/2"; 
+            using (HttpClient client = new HttpClient())
+            {
+               var respuesta =  await client.GetStringAsync(url) ;
+               dynamic json = JObject.Parse(respuesta);
+               ViewBag.image = json.image_url;
+            }
+
+            return View();
+        }
+            
+
+        
+        public IActionResult ProductosAPI() 
+        {
+            var listaProductos = _app.ObtenerTodosLosProductosPublicados();
+            return Json(listaProductos);
+            
+        }
+
+        public async Task<IActionResult> GetProductosAPI()
+        {
+            string url = "https://localhost:5001/home/productosAPI";
+            using (HttpClient client = new HttpClient())
+            {
+                var respuesta = await client.GetStringAsync(url);
+                var listaProductos = JsonConvert.DeserializeObject<List<Producto>>(respuesta);
+                return View(listaProductos);
+            }
+
+            
+        }
+
+
+
+
     }
 }

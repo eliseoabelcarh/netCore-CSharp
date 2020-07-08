@@ -19,8 +19,9 @@ else
 
 <form method="post">
 
+    <a class="btn btn-secondary" asp-controller="Home" asp-action="GetProductosAPI" >Seguir comprando</a>
     <input type="submit" value="Guardar Cambios" class="btn btn-primary" asp-action="ActualizarCarritoDeCompras" asp-controller="Home" />
-    <input type="submit" value="Checkout==>" class="btn btn-primary" asp-controller="Home" asp-action="Checkout" />
+    <input type="submit" value="Checkout >>>" class="btn btn-primary" asp-controller="Home" asp-action="Checkout" />
 
 
 
@@ -29,7 +30,7 @@ else
         double totalTienda = 0;
 
 
-        <table class="table table-striped">
+        <table class="table table-striped table-responsive table-body">
 
             <thead>
                 <tr>
@@ -72,8 +73,32 @@ else
                             </th>
 
                             <td>
-                                <input type="hidden" asp-for="@Model[i].Producto.IdProducto" />
-                                @Html.DisplayFor(modelItem => @Model[i].Producto.NombreProducto)
+
+                                <input type="hidden" asp-for="@Model[i].Producto.Imagen1" />
+                                <div class="d-flex flex-row">
+
+                                    @{
+                                        if (@Model[i].Producto.Imagen1 != null)
+                                        {
+                                            string imageBase64Data = Convert.ToBase64String(@Model[i].Producto.Imagen1);
+                                            string imageDataURL = string.Format("data:image/jpg;base64,{0}", imageBase64Data);
+
+
+                                            <div class="p-2 mr-2" style="background-image:url(@imageDataURL); background-repeat:no-repeat; background-position: center center;background-size:cover; width:2.9rem;height:3rem;"></div>
+                                        }
+                                        else
+                                        {
+                                            <img class="p-2" src="~/imagenes/imagenDemo.svg" alt="" style="width:3rem;height:3rem;">
+
+                                        }
+
+                                    }
+
+                                    <input type="hidden" asp-for="@Model[i].Producto.IdProducto" />
+                                    @Html.DisplayFor(modelItem => @Model[i].Producto.NombreProducto)
+                                </div>
+
+
                             </td>
 
                             <td>

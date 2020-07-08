@@ -265,7 +265,8 @@ namespace PanelNewTienda.Controllers
 
         public async Task<IActionResult> GetProductosAPI()
         {
-            string url = "https://localhost:5001/home/productosAPI";
+        
+            string url = "http://le-charlotte.com/home/productosAPI";
             using (HttpClient client = new HttpClient())
             {
                 var respuesta = await client.GetStringAsync(url);

@@ -49,8 +49,16 @@ namespace PanelNewTienda.Services
 
         public List<Producto> ObtenerProductoPorIdDeTienda(int id)
         {
-            var productos = _context.Productos.Where(p => p.IdTienda == id && p.Publicado == true);
-            return productos.ToList();
+            try
+            {
+                var productos = _context.Productos.Where(p => p.IdTienda == id && p.Publicado == true);
+                return productos.ToList();
+            }
+            catch (Exception)
+            {
+
+                return new List<Producto>();
+            }
         }
 
         public async Task<Tienda> ObtenerTiendaPorIdAsync(int id)
@@ -62,8 +70,16 @@ namespace PanelNewTienda.Services
 
         public List<RedSocial> ObtenerTodasLasRedesSociales()
         {
-            var listaRedes = _context.RedesSociales;
-            return listaRedes.ToList();
+            try
+            {
+                var listaRedes = _context.RedesSociales;
+                return listaRedes.ToList();
+            }
+            catch (Exception)
+            {
+
+                return new List<RedSocial>();
+            }
         }
 
         public async Task<Tienda> ObtenerTiendaVendedorActual()

@@ -35,7 +35,7 @@ namespace PanelNewTienda
 
             services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromMinutes(1);
+                options.IdleTimeout = TimeSpan.FromMinutes(5);
                 //options.Cookie.HttpOnly = true;
                 //options.Cookie.IsEssential = true;
             });
@@ -48,7 +48,7 @@ namespace PanelNewTienda
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddTransient<NewTiendaService>();//THIS IS MY OWN SERVICE
+            services.AddTransient<NewTiendaService>();//SERVICIO PROPIO 
             services.Configure<IdentityOptions>(options =>
             {
                 // Default Password settings.

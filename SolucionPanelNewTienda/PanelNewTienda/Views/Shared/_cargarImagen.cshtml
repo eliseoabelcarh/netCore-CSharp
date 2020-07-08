@@ -19,12 +19,14 @@
 
 
         <div class="form-group card-body">
-            <label class="btn btn-dark" style="cursor: pointer" for="@name">Elegir Imagen</label>
-            <input style="position:absolute; width:0.1px; height:0.1px ;overflow:hidden; opacity:0" type="file" id="@name" name="@name" accept="image/*" />
+            <label class="btn btn-dark" style="cursor: pointer" for="@name">Cambiar Imagen a:</label>
+            <input style="position:absolute; width:0.1px; height:0.1px ;overflow:hidden; opacity:0" type="file" id="@name" name="@name" accept="image/*" onchange="loadFile(event)" />
+            <img id="output" width="200" />
         </div>
-        <div class="form-group">
+        @*<div class="form-group">
             <span id="nombreArchivo"></span>
-        </div>
+            <img id="output" width="200" />
+        </div>*@
         <div class="form-group">
             <input formaction="/Productos/CargarImagen" formmethod="post" type="submit" value="Guardar Cambios" class="btn btn-primary" />
 
@@ -43,16 +45,21 @@
 
    
 
-    var input = document.getElementById(@name);
+    @*var input = document.getElementById(@name);
     input.addEventListener("change", function actuar() {
       
         var span = document.getElementById("nombreArchivo");
         var file = this.files[0].name;
-        span.innerHTML = "<div>Archivo: " + file +"</br>. </div>";
+        span.innerHTML = "Imagen Nueva:";
 
-    })
+    })*@
 
    
+    var loadFile = function (event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    
+    };
 
 
 </script>

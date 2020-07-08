@@ -242,25 +242,25 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>04/24/2018 21:27:10</publishTime>
     </File>
     <File Include="PanelNewTienda.deps.json">
-      <publishTime>07/08/2020 00:27:44</publishTime>
+      <publishTime>07/08/2020 12:27:27</publishTime>
     </File>
     <File Include="PanelNewTienda.dll">
-      <publishTime>07/08/2020 00:27:39</publishTime>
+      <publishTime>07/08/2020 12:27:23</publishTime>
     </File>
     <File Include="PanelNewTienda.exe">
-      <publishTime>07/08/2020 00:27:39</publishTime>
+      <publishTime>07/08/2020 12:27:23</publishTime>
     </File>
     <File Include="PanelNewTienda.pdb">
-      <publishTime>07/08/2020 00:27:39</publishTime>
+      <publishTime>07/08/2020 12:27:23</publishTime>
     </File>
     <File Include="PanelNewTienda.runtimeconfig.json">
       <publishTime>07/07/2020 18:36:22</publishTime>
     </File>
     <File Include="PanelNewTienda.Views.dll">
-      <publishTime>07/08/2020 00:27:42</publishTime>
+      <publishTime>07/08/2020 12:27:26</publishTime>
     </File>
     <File Include="PanelNewTienda.Views.pdb">
-      <publishTime>07/08/2020 00:27:42</publishTime>
+      <publishTime>07/08/2020 12:27:26</publishTime>
     </File>
     <File Include="pl/Microsoft.CodeAnalysis.CSharp.resources.dll">
       <publishTime>09/12/2019 17:09:00</publishTime>
@@ -359,7 +359,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>09/12/2019 17:08:36</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>07/08/2020 00:27:52</publishTime>
+      <publishTime>07/08/2020 12:27:33</publishTime>
     </File>
     <File Include="wwwroot/css/open-iconic-bootstrap.min.css">
       <publishTime>05/21/2020 01:05:03</publishTime>

@@ -26,6 +26,7 @@ namespace PanelNewTienda.Controllers
             _app = app;
         }
 
+       
 
         public void GuardarLaListaEnLaSesion(List<CarritoItem> items)
         {

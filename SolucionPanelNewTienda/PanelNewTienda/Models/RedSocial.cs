@@ -11,7 +11,7 @@ namespace PanelNewTienda.Models
         [Key]
         public int IdRedSocial { get; set; }
 
-        [StringLength(150)]
+        [StringLength(11, ErrorMessage = "Name length can't be more than 11.")]
         public string Whatsapp { get; set; }
         [StringLength(150)]
         public string Facebook { get; set; }

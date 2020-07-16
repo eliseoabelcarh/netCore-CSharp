@@ -14,7 +14,8 @@ namespace PanelNewTienda.Models
 
 
 
-        [Required]
+        
+        [Required(ErrorMessage = "Debes Completar un nombre")]
         [StringLength(100)]
         [DisplayName("Nombre de Tienda")]
         public string NombreTienda { get; set; }
